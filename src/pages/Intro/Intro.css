@@ -1,0 +1,13 @@
+#intro {
+    display: flex;
+    height: 90vh;
+    background-color: lightgray;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hide-intro {
+    height: 0;
+    transition-duration: 0.5s;
+}
