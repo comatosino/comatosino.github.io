@@ -8,7 +8,7 @@ import Contact from '../../pages/Contact/Contact';
 
 export default function Carousel() {
     return (
-        <div className="carousel carousel-slider center">
+        <section id='portfolio' className="carousel carousel-slider center">
             <div className="carousel-item" href="#one!">
                 <Projects />
             </div>
@@ -18,6 +18,6 @@ export default function Carousel() {
             <div className="carousel-item" href="#three!">
                 <Contact />
             </div>
-        </div>
+        </section>
     )
 }
