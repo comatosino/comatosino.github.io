@@ -1,6 +1,6 @@
 #intro {
     display: flex;
-    height: 90vh;
+    height: 85vh;
     background-color: lightgray;
     flex-direction: column;
     align-items: center;
@@ -8,6 +8,8 @@
 }
 
 .hide-intro {
-    height: 0;
-    transition-duration: 0.5s;
+    height: 0 !important;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.5s, opacity 0s, overflow 0s;
 }
