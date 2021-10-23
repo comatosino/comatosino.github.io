@@ -15,6 +15,15 @@ export default function App() {
         });
 
         const introPage = document.getElementById('intro');
+        const portfolio = document.getElementById('portfolio');
+
+        const navBtns = document.querySelectorAll('.my-nav-btn');
+        navBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                introPage.classList.add('hide-intro');
+                portfolio.classList.add('show-carousel');
+            });
+        });
 
         const projectsBtn = document.getElementById('projects-btn');
         projectsBtn.addEventListener('click', function() {
