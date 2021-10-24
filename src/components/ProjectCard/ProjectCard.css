@@ -1,0 +1,15 @@
+.my-card {
+    box-shadow: none !important;
+}
+
+.card-stuff {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.card-icons a {
+    margin: auto 10px;
+}
+
