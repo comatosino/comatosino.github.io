@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 
-import M from 'materialize-css'
+import M from 'materialize-css';
 
 export default function OverlayMenu({ menuActive, toggleActive }) {
     useEffect(() => {
