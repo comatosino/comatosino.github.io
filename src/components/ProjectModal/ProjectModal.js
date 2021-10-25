@@ -45,7 +45,7 @@ export default function ProjectModal(props) {
    // render using createPortal so modals are appended to document body
     // this centers them on document body instead of parent element
     return ReactDOM.createPortal(
-        <div id={props.id} class="modal modal-close">
+        <div id={props.id} className="modal modal-close">
             <div>
                 <img className='responsive-img' src={props.imgsrc} alt=''/>
 
@@ -57,7 +57,7 @@ export default function ProjectModal(props) {
 
                 <h6>Technology</h6>
                 <div>
-                    {props.tech.map(icon => <img key={iconMap[icon]} src={iconMap[icon]} width='50px'/>)}
+                    {props.tech.map(icon => <img key={iconMap[icon]} src={iconMap[icon]} alt='' width='50px'/>)}
                 </div>
             </div>
         </div>
