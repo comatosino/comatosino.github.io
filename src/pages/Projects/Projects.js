@@ -5,6 +5,11 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import consolelog from './webapp-screenshots/consolelog.png';
 import pantrimonium from './webapp-screenshots/pantrimonium.png';
 import vedomy from './webapp-screenshots/vedomy.png';
+import empDir from './webapp-screenshots/emp-dir.gif';
+import empTracker from './webapp-screenshots/emp-tracker.gif';
+import weatherDash from './webapp-screenshots/weather-dashboard.gif';
+
+import './Projects.css';
 
 export default function Projects() {
     const projects = [
@@ -32,18 +37,48 @@ export default function Projects() {
             id: uuidv4(),
             name: 'Vedomý',
             desc: 'Record thoughts and daily health habits with space for self-reflection and health suggestions.',
-            role: 'Created logic to populate recipe card with Spoonacular API content and wrote an algorithm to perform fetch methods daily.',
+            role: 'Created logic to populate recipe card with Spoonacular API content and wrote algorithm to perform fetch methods once daily.',
             tech: ['html', 'css', 'js', 'jquery', 'materialize'],
             appUrl: 'https://gushihiro.github.io/Vedomy',
             repoUrl: 'https://github.com/Gushihiro/Vedomy',
             imgsrc: vedomy,
+        },
+        {
+            id: uuidv4(),
+            name: 'Weather Dashboard',
+            desc: 'Get current weather and five-day forecast for a searched city.',
+            role: 'Sole Developer',
+            tech: ['html', 'css', 'js', 'jquery', 'bootstrap'],
+            appUrl: 'https://comatosino.github.io/weather-dashboard',
+            repoUrl: 'https://github.com/comatosino/weather-dashboard',
+            imgsrc: weatherDash,
+        },
+        {
+            id: uuidv4(),
+            name: 'Employee Directory',
+            desc: 'React app that lets a user sort a table of employees by various categories, or filter by text.',
+            role: 'Sole Developer',
+            tech: ['react', 'bootstrap'],
+            appUrl: 'https://robs-employee-directory.herokuapp.com/',
+            repoUrl: 'https://github.com/comatosino/employee-directory',
+            imgsrc: empDir,
+        },
+        {
+            id: uuidv4(),
+            name: 'Employee Tracker',
+            desc: 'This CLI application utilizes MySql and Inquirer to read and update employee, role, and department information in a database.',
+            role: 'Sole Developer',
+            tech: ['node', 'mysql'],
+            appUrl: null,
+            repoUrl: 'https://github.com/comatosino/employee-tracker',
+            imgsrc: empTracker,
         },
         // {
         //     id: uuidv4(),
         //     name: '',
         //     desc: '',
         //     role: '',
-        //     tech: '',
+        //     tech: [],
         //     appUrl: '',
         //     repoUrl: '',
         //     imgsrc: '',
@@ -52,19 +87,21 @@ export default function Projects() {
 
     return (
         <section className='container'>
-            <h5>Recent Projects</h5>
-            <div className='divider'></div>
+            <h1 className='page-header'>Projects</h1>
+            <div className='divider z-depth-1'></div>
 
-            {projects.map(project => <ProjectCard key={project.id}
-                                                  id={project.id}
-                                                  name={project.name}
-                                                  desc={project.desc}
-                                                  role={project.role}
-                                                  tech={project.tech}
-                                                  appUrl={project.appUrl}
-                                                  repoUrl={project.repoUrl}
-                                                  imgsrc={project.imgsrc}
-            />)}
+            <div className='card-container'>
+                {projects.map(project => <ProjectCard key={project.id}
+                                                    id={project.id}
+                                                    name={project.name}
+                                                    desc={project.desc}
+                                                    role={project.role}
+                                                    tech={project.tech}
+                                                    appUrl={project.appUrl}
+                                                    repoUrl={project.repoUrl}
+                                                    imgsrc={project.imgsrc}
+                />)}
+            </div>
         </section>
     )
 }
