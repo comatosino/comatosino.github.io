@@ -1,32 +1,3 @@
-
-
-
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #191919;
-  overflow-y: hidden;
-  transition: .5s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay-active {
-height: 95%;
-}
-
-/* nav btns */
-.my-nav-btn {
-  color: white !important;
-}
-/***************************************************************************/
-
 .my-nav {
   height: 10vh !important;
   line-height: normal;
@@ -48,6 +19,7 @@ height: 95%;
   border: 1px dashed;
   border-radius: 50%;
   z-index: 999;
+  cursor: pointer;
 }
 
 .my-initials {
