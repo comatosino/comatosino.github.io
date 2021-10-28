@@ -39,25 +39,28 @@ const iconMap = {
 export default function ProjectModal(props) {
     useEffect(() => {
         const modals = document.querySelectorAll('.modal');
-        M.Modal.init(modals, {});
+        M.Modal.init(modals, {
+            opacity: 0.8,
+        });
     }, []);
 
    // render using createPortal so modals are appended to document body
     // this centers them on document body instead of parent element
     return ReactDOM.createPortal(
         <div id={props.id} className="modal modal-close">
-            <div>
-                <img className='responsive-img' src={props.imgsrc} alt=''/>
-
+            <img className='responsive-img' src={props.imgsrc} alt=''/>
+            <div className='modal-content'>
                 <h4>{props.name}</h4>
-                <p>{props.desc}</p>
+                <p className=''>{props.desc}</p>
+
+                <div className='divider'></div>
 
                 <h6>Role</h6>
-                <p>{props.role}</p>
-
-                <h6>Technology</h6>
-                <div>
-                    {props.tech.map(icon => <img key={iconMap[icon]} src={iconMap[icon]} alt='' width='50px'/>)}
+                <p className=''>{props.role}</p>
+                <div className='divider'></div>
+                <h6>Technologies</h6>
+                <div className='icon-container'>
+                    {props.tech.map(icon => <img key={iconMap[icon]} src={iconMap[icon]} alt=''/>)}
                 </div>
             </div>
         </div>
