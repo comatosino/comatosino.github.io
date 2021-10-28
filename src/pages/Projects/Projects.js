@@ -5,9 +5,9 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import consolelog from './webapp-screenshots/consolelog.png';
 import pantrimonium from './webapp-screenshots/pantrimonium.png';
 import vedomy from './webapp-screenshots/vedomy.png';
-import empDir from './webapp-screenshots/emp-dir.gif';
+// import empDir from './webapp-screenshots/emp-dir.gif';
 import empTracker from './webapp-screenshots/emp-tracker.gif';
-import weatherDash from './webapp-screenshots/weather-dashboard.gif';
+// import weatherDash from './webapp-screenshots/weather-dashboard.gif';
 
 import './Projects.css';
 
@@ -43,26 +43,26 @@ export default function Projects() {
             repoUrl: 'https://github.com/Gushihiro/Vedomy',
             imgsrc: vedomy,
         },
-        {
-            id: uuidv4(),
-            name: 'Weather Dashboard',
-            desc: 'Get current weather and five-day forecast for a searched city.',
-            role: 'Sole Developer',
-            tech: ['html', 'css', 'js', 'jquery', 'bootstrap'],
-            appUrl: 'https://comatosino.github.io/weather-dashboard',
-            repoUrl: 'https://github.com/comatosino/weather-dashboard',
-            imgsrc: weatherDash,
-        },
-        {
-            id: uuidv4(),
-            name: 'Employee Directory',
-            desc: 'React app that lets a user sort a table of employees by various categories, or filter by text.',
-            role: 'Sole Developer',
-            tech: ['react', 'bootstrap'],
-            appUrl: 'https://robs-employee-directory.herokuapp.com/',
-            repoUrl: 'https://github.com/comatosino/employee-directory',
-            imgsrc: empDir,
-        },
+        // {
+        //     id: uuidv4(),
+        //     name: 'Weather Dashboard',
+        //     desc: 'Get current weather and five-day forecast for a searched city.',
+        //     role: 'Sole Developer',
+        //     tech: ['html', 'css', 'js', 'jquery', 'bootstrap'],
+        //     appUrl: 'https://comatosino.github.io/weather-dashboard',
+        //     repoUrl: 'https://github.com/comatosino/weather-dashboard',
+        //     imgsrc: weatherDash,
+        // },
+        // {
+        //     id: uuidv4(),
+        //     name: 'Employee Directory',
+        //     desc: 'React app that lets a user sort a table of employees by various categories, or filter by text.',
+        //     role: 'Sole Developer',
+        //     tech: ['react', 'bootstrap'],
+        //     appUrl: 'https://robs-employee-directory.herokuapp.com/',
+        //     repoUrl: 'https://github.com/comatosino/employee-directory',
+        //     imgsrc: empDir,
+        // },
         {
             id: uuidv4(),
             name: 'Employee Tracker',
