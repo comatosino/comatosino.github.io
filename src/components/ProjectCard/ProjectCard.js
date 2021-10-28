@@ -18,8 +18,8 @@ export default function ProjectCard(props) {
                 <div className='card-stuff'>
                     <span className='card-title'>{props.name}</span>
                     <div className='card-icons card-title'>
+                        {props.appUrl && <a href={props.appUrl} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>}
                         <a href={props.repoUrl} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a href={props.appUrl} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
                     </div>
                 </div>
             </div>
