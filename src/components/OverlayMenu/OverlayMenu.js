@@ -27,12 +27,22 @@ export default function OverlayMenu({ menuActive, toggleActive }) {
             return curriedHandleClick;
         }
 
+        const handleMainClick = () => {
+            introPage.classList.add('hide-intro');
+            portfolio.classList.add('show-carousel');
+            pages.set(0);
+        }
+
+        const mainBtn = document.getElementById('portfolio-btn');
+        mainBtn.addEventListener('click', handleMainClick);
+
         const navBtns = document.querySelectorAll('.my-nav-btn');
         navBtns.forEach((btn, idx) => btn.addEventListener('click', handleClick(idx)));
 
         return () => {
             pages.destroy();
             navBtns.forEach((btn, idx) => btn.removeEventListener('click', handleClick(idx)));
+            mainBtn.removeEventListener('click', handleMainClick);
         }
     }, []);
 

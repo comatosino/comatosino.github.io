@@ -1,24 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import './Intro.css'
 
 export default function Intro() {
-    useEffect(() => {
-        const introPage = document.getElementById('intro');
-        const portfolio = document.getElementById('portfolio');
-        const mainBtn = document.getElementById('portfolio-btn');
-
-        const handleClick = () => {
-            introPage.classList.add('hide-intro');
-            portfolio.classList.add('show-carousel');
-        }
-        mainBtn.addEventListener('click', handleClick);
-
-        return () => {
-            mainBtn.removeEventListener('click', handleClick);
-        }
-    }, []);
-
     return (
         <section id='intro'>
             <div className='container'>
