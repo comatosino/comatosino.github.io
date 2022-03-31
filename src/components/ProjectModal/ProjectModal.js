@@ -60,8 +60,8 @@ export default function ProjectModal(props) {
         <div className="divider"></div>
         <h6>Technologies</h6>
         <div className="icon-container">
-          {props.tech.map((icon) => (
-            <img key={iconMap[icon]} src={iconMap[icon]} alt="" />
+          {props.tech.map((icon, idx) => (
+            <img key={idx} src={iconMap[icon]} alt="" />
           ))}
         </div>
       </div>

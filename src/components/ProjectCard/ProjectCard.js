@@ -37,6 +37,7 @@ export default function ProjectCard(props) {
 
       <ProjectModal
         id={props.id}
+        key={props.id}
         name={props.name}
         desc={props.desc}
         role={props.role}
