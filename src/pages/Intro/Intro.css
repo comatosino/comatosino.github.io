@@ -1,16 +1,16 @@
 #intro {
-    display: flex;
-    height: 85vh;
-    background-color: lightgray;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.5s;
+  display: flex;
+  height: 85vh;
+  background-color: lightgray;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
 }
 
 .hide-intro {
-    height: 0 !important;
-    opacity: 0;
-    overflow: hidden;
-    transition: height 0.5s, opacity 0s, overflow 0s;
+  height: 0 !important;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 0.5s, opacity 0s, overflow 0s;
 }

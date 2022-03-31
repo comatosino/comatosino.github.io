@@ -1,29 +1,27 @@
 .my-card {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .card-title {
-    font-weight: 400 !important;
-    background-color: transparent;
+  font-weight: 400 !important;
+  background-color: transparent;
 }
 
 .card-stuff {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: transparent;
 }
 
 .card-icons a {
-    margin: auto 10px;
+  margin: auto 10px;
 }
-
 
 @media screen and (min-width: 1024px) {
-    .my-card {
-        width: 50%;
-        padding: 0 10px;
-    }
+  .my-card {
+    width: 50%;
+    padding: 0 10px;
+  }
 }
-

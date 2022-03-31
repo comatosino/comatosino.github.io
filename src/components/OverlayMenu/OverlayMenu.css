@@ -1,26 +1,26 @@
 .overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #191919;
-    overflow-y: hidden;
-    transition: .5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #191919;
+  overflow-y: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .overlay-active {
+.overlay-active {
   height: 100%;
-  }
+}
 
-  .my-nav-btn {
-    color: white !important;
-    font-size: 2rem !important;
-    font-weight: 300;
-    margin: 2rem 0;
-  }
+.my-nav-btn {
+  color: white !important;
+  font-size: 2rem !important;
+  font-weight: 300;
+  margin: 2rem 0;
+}
