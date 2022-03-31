@@ -1,7 +1,5 @@
 import React from "react";
 
-import Avatar from "./images/avatar.jpg";
-
 import "./About.css";
 
 export default function About() {
@@ -10,8 +8,6 @@ export default function About() {
       <h1 className="page-header">About</h1>
       <div className="divider z-depth-1"></div>
       <div className="section">
-        <img src={Avatar} alt="avatar" className="circle" width="200px" />
-
         <div className="about-content-container">
           <p className="left-align">
             Hello, I'm Robert!
