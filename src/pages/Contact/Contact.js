@@ -1,5 +1,4 @@
-import React from "react";
-
+import "./Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -12,12 +11,11 @@ import {
   faExternalLinkAlt,
   faCheck,
 } from "@fortawesome/free-solid-svg-icons";
-
 import Resume from "./files/robert_adams_resume.pdf";
 
-import "./Contact.css";
+import React from "react";
 
-export default function Contact() {
+const Contact = () => {
   const copyText = async () => {
     try {
       await navigator.clipboard.writeText("adamsiii.robert@gmail.com");
@@ -151,4 +149,6 @@ export default function Contact() {
       </div>
     </section>
   );
-}
+};
+
+export default Contact;
