@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Carousel from "./components/Carousel/Carousel";
 import Intro from "./pages/Intro/Intro";
 
-export default function App() {
+const App = () => {
   return (
     <>
       <Header />
@@ -16,4 +16,6 @@ export default function App() {
       <Footer />
     </>
   );
-}
+};
+
+export default App;
