@@ -1,10 +1,13 @@
 import React from "react";
+
 import Nav from "../Nav/Nav";
 
-export default function Header(props) {
+const Header = () => {
   return (
     <header>
       <Nav />
     </header>
   );
-}
+};
+
+export default Header;
