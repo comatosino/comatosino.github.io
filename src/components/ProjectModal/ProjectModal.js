@@ -1,42 +1,14 @@
+import "./ProjectModal.css";
+import M from "materialize-css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 
-import M from "materialize-css";
-
-import "./ProjectModal.css";
-
-// tech images
-import html from "./tech-icons/html.png";
-import css from "./tech-icons/css.png";
-import js from "./tech-icons/javascript.png";
-import materialize from "./tech-icons/materialize.png";
-import bootstrap from "./tech-icons/bootstrap.png";
-import express from "./tech-icons/express.png";
-import jquery from "./tech-icons/jquery.png";
-import handlebars from "./tech-icons/handlebars.png";
-import mysql from "./tech-icons/mysql.png";
-import mongodb from "./tech-icons/mongodb.png";
-import node from "./tech-icons/node.png";
-import reacticon from "./tech-icons/react1.png";
-import tailwind from "./tech-icons/tailwindcss.png";
-
-const iconMap = {
-  html: html,
-  css: css,
-  js: js,
-  materialize: materialize,
-  bootstrap: bootstrap,
-  express: express,
-  jquery: jquery,
-  handlebars: handlebars,
-  mysql: mysql,
-  mongodb: mongodb,
-  node: node,
-  react: reacticon,
-  tailwind: tailwind,
-};
-
-export default function ProjectModal(props) {
+const ProjectModal = (props) => {
   useEffect(() => {
     const modals = document.querySelectorAll(".modal");
     M.Modal.init(modals, {
@@ -44,28 +16,45 @@ export default function ProjectModal(props) {
     });
   }, []);
 
-  // render using createPortal so modals are appended to document body
-  // this centers them on document body instead of parent element
+  // use createPortal to render modals centered in doc body not parent
   return ReactDOM.createPortal(
     <div id={props.id} className="modal modal-close">
-      <img className="responsive-img" src={props.imgsrc} alt="" />
+      <img
+        className="responsive-img"
+        src="https://placekitten.com/g/1920/1080"
+        alt=""
+      />
       <div className="modal-content">
-        <h4>{props.name}</h4>
-        <p className="">{props.desc}</p>
+        <div className="modal-title">
+          <span>{props.name}</span>
+
+          <div className="links">
+            <a href={props.appUrl} target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faExternalLinkAlt} />
+            </a>
+            <a href={props.repoUrl} target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </div>
+        </div>
+
+        <p className="">a description</p>
 
         <div className="divider"></div>
 
-        <h6>Role</h6>
-        <p className="">{props.role}</p>
+        <h6>role</h6>
+        <p>what i did</p>
+
         <div className="divider"></div>
-        <h6>Technologies</h6>
-        <div className="icon-container">
-          {props.tech.map((icon, idx) => (
-            <img key={idx} src={iconMap[icon]} alt="" />
-          ))}
+
+        <h6>tech</h6>
+        <div>
+          <p>what i used</p>
         </div>
       </div>
     </div>,
     document.getElementById("modals")
   );
-}
+};
+
+export default ProjectModal;
