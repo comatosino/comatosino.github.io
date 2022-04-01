@@ -6,7 +6,7 @@
     "tech": "",
     "appURL": "",
     "repoURL": "",
-    "imgsrc": ""
+    "imgsrc": "https://raw.githubusercontent.com/comatosino/comatosino.github.io/master/assets/project_images/traductora.png"
   },
   {
     "name": "Console Log",
@@ -15,7 +15,7 @@
     "tech": "",
     "appURL": "",
     "repoURL": "",
-    "imgsrc": ""
+    "imgsrc": "https://raw.githubusercontent.com/comatosino/comatosino.github.io/master/assets/project_images/console-log.png"
   },
   {
     "name": "Pantrimonium",
@@ -24,7 +24,7 @@
     "tech": "",
     "appURL": "",
     "repoURL": "",
-    "imgsrc": ""
+    "imgsrc": "https://raw.githubusercontent.com/comatosino/comatosino.github.io/master/assets/project_images/pantrimonium.png"
   },
   {
     "name": "Vedomy",
@@ -33,7 +33,7 @@
     "tech": "",
     "appURL": "",
     "repoURL": "",
-    "imgsrc": ""
+    "imgsrc": "https://raw.githubusercontent.com/comatosino/comatosino.github.io/master/assets/project_images/vedomy.png"
   },
   {
     "name": "Bearded Dad Jokes",
@@ -42,15 +42,6 @@
     "tech": "",
     "appURL": "",
     "repoURL": "",
-    "imgsrc": ""
-  },
-  {
-    "name": "Weather Boop",
-    "desc": "",
-    "role": "",
-    "tech": "",
-    "appURL": "",
-    "repoURL": "",
-    "imgsrc": ""
+    "imgsrc": "https://raw.githubusercontent.com/comatosino/comatosino.github.io/master/assets/project_images/dad-jokes.png"
   }
 ]
