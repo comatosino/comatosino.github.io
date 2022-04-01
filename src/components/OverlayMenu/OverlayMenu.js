@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
-
+import "./OverlayMenu.css";
 import M from "materialize-css";
 
-import "./OverlayMenu.css";
+import React, { useEffect } from "react";
 
-export default function OverlayMenu({ menuActive, toggleActive }) {
+const OverlayMenu = ({ menuActive, toggleActive }) => {
   useEffect(() => {
     const introPage = document.getElementById("intro");
     const portfolio = document.getElementById("portfolio");
@@ -78,4 +77,6 @@ export default function OverlayMenu({ menuActive, toggleActive }) {
       </button>
     </div>
   );
-}
+};
+
+export default OverlayMenu;
