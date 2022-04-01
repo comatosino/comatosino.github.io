@@ -10,7 +10,7 @@ export default function About() {
       <div className="section">
         <div className="about-content-container">
           <p className="left-align">
-            Hello, I'm Robert!
+            Hi, I'm Robert!
             <br />
             <br />
             I'm a full-stack web developer who utilizes my applied physics and
