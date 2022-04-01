@@ -12,22 +12,18 @@ const ProjectModal = (props) => {
   useEffect(() => {
     const modals = document.querySelectorAll(".modal");
     M.Modal.init(modals, {
-      opacity: 0.8,
+      opacity: 1,
+      endingTop: "15vh",
     });
   }, []);
 
   // use createPortal to render modals centered in doc body not parent
   return ReactDOM.createPortal(
     <div id={props.id} className="modal modal-close">
-      <img
-        className="responsive-img"
-        src="https://placekitten.com/g/1920/1080"
-        alt=""
-      />
+      <img className="responsive-img" src={props.imgsrc} alt="" />
       <div className="modal-content">
         <div className="modal-title">
-          <span>{props.name}</span>
-
+          <h4>{props.name}</h4>
           <div className="links">
             <a href={props.appUrl} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faExternalLinkAlt} />
@@ -42,7 +38,7 @@ const ProjectModal = (props) => {
 
         <div className="divider"></div>
 
-        <h6>role</h6>
+        <h6>Role</h6>
         <p>what i did</p>
 
         <div className="divider"></div>
