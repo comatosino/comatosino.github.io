@@ -6,7 +6,7 @@ const Footer = () => {
   const thisYear = new Date().getFullYear();
 
   return (
-    <footer className="page-footer black my-footer z-depth-5">
+    <footer className="page-footer my-footer z-depth-5">
       <div id="copyright" className="container">
         © {thisYear} Robert Adams
       </div>
