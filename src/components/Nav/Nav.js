@@ -1,11 +1,11 @@
+import "./Nav.css";
+
 import React, { useState, useEffect } from "react";
 
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import OverlayMenu from "../OverlayMenu/OverlayMenu";
 
-import "./Nav.css";
-
-export default function Nav() {
+const Nav = () => {
   const [menuActive, setMenuActive] = useState(false);
 
   useEffect(() => {
@@ -48,4 +48,6 @@ export default function Nav() {
       <OverlayMenu menuActive={menuActive} toggleActive={toggleActive} />
     </nav>
   );
-}
+};
+
+export default Nav;
