@@ -12,11 +12,17 @@
   height: 0 !important;
   opacity: 0;
   overflow: hidden;
-  transition: height 0.5s, opacity 0s, overflow 0s;
+  transition: height 0.5s, opacity 0.1s, overflow 0.1s;
 }
 
 .myContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+@media screen and (max-width: 400px) {
+  .my-avatar {
+    align-self: center;
+  }
 }
