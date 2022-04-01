@@ -1,8 +1,7 @@
+import "./About.css";
 import React from "react";
 
-import "./About.css";
-
-export default function About() {
+const About = () => {
   return (
     <section className="about-container container">
       <h1 className="page-header">About</h1>
@@ -27,4 +26,6 @@ export default function About() {
       </div>
     </section>
   );
-}
+};
+
+export default About;
