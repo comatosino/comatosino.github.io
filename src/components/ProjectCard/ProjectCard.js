@@ -15,7 +15,7 @@ const ProjectCard = (props) => {
           <img
             className="modal-trigger"
             data-target={props.id}
-            src="https://placekitten.com/g/1920/1080"
+            src={props.imgsrc}
             alt=""
           />
         </div>
@@ -23,18 +23,23 @@ const ProjectCard = (props) => {
         <div className="card-stuff">
           <span className="card-title">{props.name}</span>
           <div className="card-icons card-title">
-            <a href={props.appUrl} target="_blank" rel="noreferrer">
+            <a href={props.appURL} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faExternalLinkAlt} />
             </a>
 
-            <a href={props.repoUrl} target="_blank" rel="noreferrer">
+            <a href={props.repoURL} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
         </div>
       </div>
 
-      <ProjectModal key={props.id} id={props.id} name={props.name} />
+      <ProjectModal
+        key={props.id}
+        id={props.id}
+        name={props.name}
+        imgsrc={props.imgsrc}
+      />
     </>
   );
 };
