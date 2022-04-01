@@ -1,12 +1,12 @@
-import React from "react";
-
 import "./Carousel.css";
+
+import React from "react";
 
 import Projects from "../../pages/Projects/Projects";
 import About from "../../pages/About/About";
 import Contact from "../../pages/Contact/Contact";
 
-export default function Carousel() {
+const Carousel = () => {
   return (
     <section id="portfolio" className="carousel carousel-slider center">
       <div id="projects" className="carousel-item" href="#one!">
@@ -20,4 +20,6 @@ export default function Carousel() {
       </div>
     </section>
   );
-}
+};
+
+export default Carousel;
