@@ -1,6 +1,8 @@
 .my-nav {
   height: 10vh !important;
   line-height: normal;
+  position: relative;
+  z-index: 1;
 }
 
 .my-nav-container {
@@ -16,7 +18,6 @@
   justify-content: center;
   height: 39px;
   width: 39px;
-
   z-index: 999;
   cursor: pointer;
 }
