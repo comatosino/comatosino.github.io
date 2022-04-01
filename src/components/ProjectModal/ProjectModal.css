@@ -4,6 +4,7 @@
 
 .modal {
   height: fit-content;
+  background-color: transparent !important;
   max-height: 90vh !important;
   width: 100vw !important;
 
@@ -17,6 +18,10 @@
   display: none;
 }
 
+.modal-title {
+  display: flex;
+}
+
 .modal-content h6 {
   margin-top: 10px !important;
   font-weight: 500;
@@ -24,6 +29,9 @@
 
 .modal-content {
   padding: 0 24px !important;
+  background-color: #fafafa;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .icon-container {
