@@ -34,7 +34,7 @@ const ProjectCard = (props) => {
         </div>
       </div>
 
-      <ProjectModal key={props.id} id={props.id} name={props.nameyyy} />
+      <ProjectModal key={props.id} id={props.id} name={props.name} />
     </>
   );
 };
