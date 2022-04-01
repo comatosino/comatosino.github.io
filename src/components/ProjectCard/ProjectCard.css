@@ -1,5 +1,6 @@
 .my-card {
   box-shadow: none !important;
+  background-color: transparent;
 }
 
 .card-title {
