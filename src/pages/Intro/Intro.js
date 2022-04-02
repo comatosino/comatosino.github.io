@@ -19,7 +19,13 @@ const Intro = () => {
         <div className="divider z-depth-1"></div>
         <p className="flow-text">
           <Typewriter
-            words={[" I'm a web developer based in Seattle!"]}
+            words={[
+              "I'm a web developer based in Seattle!",
+              "I'm a human?",
+              "I'm a human!",
+              "I'm always learning!",
+              "I'm a web developer based in Seattle!",
+            ]}
             cursor={showCursor}
             cursorStyle="|"
             onLoopDone={() => setTimeout(() => setShowCursor(false), 1000)}
