@@ -7,24 +7,19 @@ const OverlayMenu = ({ menuActive, toggleActive }) => {
   useEffect(() => {
     const introPage = document.getElementById("intro");
     const portfolio = document.getElementById("portfolio");
-
     const pages = M.Carousel.init(portfolio, {
       fullWidth: true,
     });
 
-    // use curried function so btn idx can be used to set carousel page in callback
-    const handleClick = (idx) => {
-      const curriedHandleClick = ({ target: { dataset } }) => {
+    const handleClick =
+      (idx) =>
+      ({ target: { dataset } }) => {
         const targetPage = document.getElementById(dataset.page);
         targetPage.scrollTo({ top: 0, behavior: "smooth" });
-
         introPage.classList.add("hide-intro");
         portfolio.classList.add("show-carousel");
-
         pages.set(idx);
       };
-      return curriedHandleClick;
-    };
 
     const handleMainClick = () => {
       introPage.classList.add("hide-intro");
