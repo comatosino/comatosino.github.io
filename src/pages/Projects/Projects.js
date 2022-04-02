@@ -4,7 +4,6 @@ import projects from "./projects.json";
 import React from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
-console.log(projects);
 const Projects = () => {
   return (
     <section className="container">
