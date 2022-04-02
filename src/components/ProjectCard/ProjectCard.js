@@ -19,7 +19,6 @@ const ProjectCard = (props) => {
             alt=""
           />
         </div>
-
         <div className="card-stuff">
           <span className="card-title">{props.name}</span>
           <div className="card-icons card-title">
@@ -35,9 +34,14 @@ const ProjectCard = (props) => {
       </div>
 
       <ProjectModal
-        key={props.id}
+        key={props.name}
         id={props.id}
         name={props.name}
+        desc={props.desc}
+        role={props.role}
+        tech={props.tech}
+        appURL={props.appURL}
+        repoURL={props.repoURL}
         imgsrc={props.imgsrc}
       />
     </>
