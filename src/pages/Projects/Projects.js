@@ -1,8 +1,10 @@
 import "./Projects.css";
-import projects from "./projects.json";
+import projectData from "./projectData";
 
 import React from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+
+console.log(projectData);
 
 const Projects = () => {
   return (
@@ -10,7 +12,7 @@ const Projects = () => {
       <h1 className="page-header">Projects</h1>
       <div className="divider z-depth-1"></div>
       <div className="card-container">
-        {projects.map((project, idx) => (
+        {projectData.map((project, idx) => (
           <ProjectCard
             key={project.name}
             id={idx}
@@ -20,7 +22,7 @@ const Projects = () => {
             tech={project.tech}
             appURL={project.appURL}
             repoURL={project.repoURL}
-            imgsrc={project.imgsrc}
+            imgsrc={project.img}
           />
         ))}
       </div>
