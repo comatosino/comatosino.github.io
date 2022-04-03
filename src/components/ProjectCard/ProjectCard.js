@@ -10,8 +10,8 @@ import ProjectModal from "../ProjectModal/ProjectModal";
 const ProjectCard = (props) => {
   return (
     <>
-      <div className="card my-card">
-        <div className="card-image hoverable">
+      <div className="card my-card transparent">
+        <div className="card-image hoverable transparent">
           <img
             className="modal-trigger"
             data-target={props.id}
