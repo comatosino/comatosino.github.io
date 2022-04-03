@@ -9,15 +9,3 @@ html {
   line-height: 32px;
   margin: 0;
 }
-
-@media screen and (min-width: 1024px) {
-  .portfolio-container {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 50%;
-  }
-}
