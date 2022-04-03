@@ -1,5 +1,6 @@
 .carousel {
   height: 0vh !important;
+  opacity: 0;
   transition-duration: 0.5s;
 }
 
@@ -18,5 +19,6 @@
 
 .show-carousel {
   height: 85vh !important;
-  transition: height 0.5s;
+  opacity: 1;
+  transition: height 0.5s, opacity 0.1s;
 }
