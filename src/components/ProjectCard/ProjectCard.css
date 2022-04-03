@@ -1,11 +1,5 @@
-.my-card {
-  box-shadow: none !important;
-  background-color: transparent;
-}
-
-.card-title {
-  font-weight: 400 !important;
-  background-color: transparent;
+.card {
+  box-shadow: none;
 }
 
 .card-stuff {
@@ -21,7 +15,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .my-card {
+  .card {
     width: 50%;
     padding: 0 10px;
   }
