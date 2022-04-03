@@ -1,25 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0258ec1.chunk.css",
-    "main.js": "/static/js/main.99f5a88c.chunk.js",
-    "main.js.map": "/static/js/main.99f5a88c.chunk.js.map",
+    "main.css": "/static/css/main.3cb3878e.chunk.css",
+    "main.js": "/static/js/main.00d766e4.chunk.js",
+    "main.js.map": "/static/js/main.00d766e4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f027f2bf.js",
     "runtime-main.js.map": "/static/js/runtime-main.f027f2bf.js.map",
     "static/css/2.b0300f7a.chunk.css": "/static/css/2.b0300f7a.chunk.css",
-    "static/js/2.187ef9a9.chunk.js": "/static/js/2.187ef9a9.chunk.js",
-    "static/js/2.187ef9a9.chunk.js.map": "/static/js/2.187ef9a9.chunk.js.map",
+    "static/js/2.1633ccc5.chunk.js": "/static/js/2.1633ccc5.chunk.js",
+    "static/js/2.1633ccc5.chunk.js.map": "/static/js/2.1633ccc5.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.b0300f7a.chunk.css.map": "/static/css/2.b0300f7a.chunk.css.map",
-    "static/css/main.e0258ec1.chunk.css.map": "/static/css/main.e0258ec1.chunk.css.map",
-    "static/js/2.187ef9a9.chunk.js.LICENSE.txt": "/static/js/2.187ef9a9.chunk.js.LICENSE.txt",
+    "static/css/main.3cb3878e.chunk.css.map": "/static/css/main.3cb3878e.chunk.css.map",
+    "static/js/2.1633ccc5.chunk.js.LICENSE.txt": "/static/js/2.1633ccc5.chunk.js.LICENSE.txt",
     "static/media/avatar.f290f858.jpg": "/static/media/avatar.f290f858.jpg",
-    "static/media/robert_adams_resume.997b7ada.pdf": "/static/media/robert_adams_resume.997b7ada.pdf"
+    "static/media/console-log-demo.457eba07.gif": "/static/media/console-log-demo.457eba07.gif",
+    "static/media/dad-jokes-demo.b60c17b8.gif": "/static/media/dad-jokes-demo.b60c17b8.gif",
+    "static/media/pantrimonium-demo.1aebe9d7.gif": "/static/media/pantrimonium-demo.1aebe9d7.gif",
+    "static/media/robert_adams_resume.997b7ada.pdf": "/static/media/robert_adams_resume.997b7ada.pdf",
+    "static/media/traductora-demo.8bc8b02f.gif": "/static/media/traductora-demo.8bc8b02f.gif",
+    "static/media/vedomy-demo.d93c62e3.gif": "/static/media/vedomy-demo.d93c62e3.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.f027f2bf.js",
     "static/css/2.b0300f7a.chunk.css",
-    "static/js/2.187ef9a9.chunk.js",
-    "static/css/main.e0258ec1.chunk.css",
-    "static/js/main.99f5a88c.chunk.js"
+    "static/js/2.1633ccc5.chunk.js",
+    "static/css/main.3cb3878e.chunk.css",
+    "static/js/main.00d766e4.chunk.js"
   ]
 }
