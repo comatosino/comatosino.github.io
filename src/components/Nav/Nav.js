@@ -1,29 +1,29 @@
-import "./Nav.css";
+import './Nav.css';
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
-import OverlayMenu from "../OverlayMenu/OverlayMenu";
+import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
+import OverlayMenu from '../OverlayMenu/OverlayMenu';
 
 const Nav = () => {
   const [menuActive, setMenuActive] = useState(false);
 
   useEffect(() => {
-    const introPage = document.getElementById("intro");
-    const portfolio = document.getElementById("portfolio");
-    const overlay = document.getElementById("overlay-menu");
-    const initialsBtn = document.getElementById("show-intro");
+    const introPage = document.getElementById('intro');
+    const portfolio = document.getElementById('portfolio');
+    const overlay = document.getElementById('overlay-menu');
+    const initialsBtn = document.getElementById('show-intro');
 
     const handleClick = () => {
-      introPage.classList.remove("hide-intro");
-      portfolio.classList.remove("show-carousel");
-      overlay.classList.remove("overlay-active");
+      introPage.classList.remove('hide-intro');
+      portfolio.classList.remove('show-carousel');
+      overlay.classList.remove('overlay-active');
     };
 
-    initialsBtn.addEventListener("click", handleClick);
+    initialsBtn.addEventListener('click', handleClick);
 
     return () => {
-      initialsBtn.removeEventListener("click", handleClick);
+      initialsBtn.removeEventListener('click', handleClick);
     };
   }, []);
 
@@ -32,16 +32,14 @@ const Nav = () => {
   };
 
   const menuCheck = () => {
-    if (menuActive) {
-      setMenuActive(!menuActive);
-    }
+    if (menuActive) setMenuActive(!menuActive);
   };
 
   return (
-    <nav className="black my-nav z-depth-5">
-      <div className="container my-nav-container">
-        <div id="show-intro" className="initials-box" onClick={menuCheck}>
-          <div className="my-initials">RA</div>
+    <nav className='black my-nav z-depth-5'>
+      <div className='container my-nav-container'>
+        <div id='show-intro' className='initials-box' onClick={menuCheck}>
+          <div className='my-initials'>RA</div>
         </div>
         <HamburgerMenu menuActive={menuActive} toggleActive={toggleActive} />
       </div>
